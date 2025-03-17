@@ -8,11 +8,11 @@
 print("Please enter a positive integer")
 my_integer = 15
 
-while my_integer != 1:
-    if (my_integer % 2) == 0:
-        my_integer = my_integer // 2
-    else:
-        my_integer = 3 * my_integer + 1
-    print (my_integer)
+while my_integer != 1: #Starting while loop, run loop while int is not 1
+    if (my_integer % 2) == 0:  #Starting if clause, finding even numbers
+        my_integer = my_integer // 2 #if int is positive, divide it by 2
+    else: # starting else clause
+        my_integer = 3 * my_integer + 1 #calculation in case it's an odd number
+    print (my_integer) #print result
 
     #Source even and odd numbers: https://www.toppr.com/guides/python-guide/examples/python-examples/python-program-to-check-if-a-number-is-odd-or-even/#:~:text=num%20%3D%20int%20(input%20(%E2%80%9C,even%3A%20887%20887%20is%20odd.
