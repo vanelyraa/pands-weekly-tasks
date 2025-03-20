@@ -10,11 +10,11 @@
 #Extra:
 #M#odify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
 
-print("Please enter an 10 digit account number")
-account_number = "1098745638"
-print ("XXXXXX" + account_number[6:10]) #Print from 6 digit until 9. Position 10 not included
+#10 digits account number
+account_number = str(input("Please enter an 10 digit account number ")) #User input 10 digits acc munber stored as string
+print (f'Last 4 digits of your account number: XXXXXX{account_number[6:10]}') #Printing from 6th until 9th position, 10 not included
 
-#Modified version
-print("Please enter an account number")
-account_number = "1095878745638"
-print ("Last 4 digits of your account number " + account_number[-4:]) #Print 4 digits from the end of the account number
+
+#Extra
+account_number2 = str(input("Please enter an account number ")) #User input acc munber stored as string
+print (f'Last 4 digits of your account number: {account_number2[-4:]}') #Print 4 digits from the end of the account number

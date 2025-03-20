@@ -5,8 +5,7 @@
 #At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
 #Have the program end if the current value is one.
 
-print("Please enter a positive integer")
-my_integer = 15
+my_integer = int(input("Please enter a positive integer ")) #User input stored as integer
 
 while my_integer != 1: #Starting while loop, run loop while int is not 1
     if (my_integer % 2) == 0:  #Starting if clause, finding even numbers
