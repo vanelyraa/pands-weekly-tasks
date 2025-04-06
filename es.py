@@ -28,3 +28,8 @@ def my_program (): #Defining main function
 
 if __name__ == '__main__': #Checking if script is not imported as a module
     my_program() #call function
+
+#Resources: 
+#https://sqlpey.com/python/top-4-methods-to-handle-exceptions-when-reading-files-in-python/#google_vignette
+#https://dnmtechs.com/using-endswith-to-check-for-multiple-file-extensions-in-python-3/
+#https://ostechnix.com/count-characters-and-words-in-text-files-using-python/
