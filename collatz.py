@@ -14,4 +14,4 @@ while my_integer != 1: #Starting while loop, run loop while int is not 1
         my_integer = 3 * my_integer + 1 #calculation in case it's an odd number
     print (my_integer) #print result
 
-    #Source even and odd numbers: https://www.toppr.com/guides/python-guide/examples/python-examples/python-program-to-check-if-a-number-is-odd-or-even/#:~:text=num%20%3D%20int%20(input%20(%E2%80%9C,even%3A%20887%20887%20is%20odd.
+    #Resources: https://www.toppr.com/guides/python-guide/examples/python-examples/python-program-to-check-if-a-number-is-odd-or-even/#:~:text=num%20%3D%20int%20(input%20(%E2%80%9C,even%3A%20887%20887%20is%20odd.

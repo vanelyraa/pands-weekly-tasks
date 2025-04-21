@@ -15,4 +15,6 @@ print ('Second amount is:', amount2,' cents') #Printing user input 2
 new_amount = (amount1 + amount2)/100 #Sum values and divide by 100 for value in €
 print (f'The sum of these is € {new_amount:.2f}') #Printing result, added F-string to print 2 decimal places
 
-#Source: https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
+#Resources: 
+#https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
+#https://www.geeksforgeeks.org/how-to-get-two-decimal-places-in-python/
