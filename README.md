@@ -1,5 +1,6 @@
 **Programming and scripting Weekly Tasks**
-###_Author Vanessa Lyra_
+
+_Author Vanessa Lyra_
 
 **Weekly Task 2** - bank.py
 
