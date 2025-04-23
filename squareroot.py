@@ -1,7 +1,8 @@
 # Weekly task 6
-# Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
-# You should create a function called <tt>sqrt</tt> that does this.
-# I am asking you to create your own sqrt function and not to use the built in functions x ** .5 or math.sqrt(x).
+# Author Vanessa Lyra
+
+#Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
+#You should create a function called <tt>sqrt</tt> that does this.
 
 #def pos_number():
 #my_float = False
@@ -20,4 +21,6 @@ def Sqrt(my_float): #function to calculate square root using Newton's method
     return first_root #function return value
 print (Sqrt(my_float)) #Printing Square root
 
-#Source: https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756
+#Resources: 
+#https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756
+#https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method

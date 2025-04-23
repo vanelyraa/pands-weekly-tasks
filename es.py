@@ -1,3 +1,9 @@
+# Weekly Task 07
+# Author Vanessa Lyra
+
+#Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
+#he program should take the filename from an argument on the command line. I have not shown you how to do this, you need to look it up.
+
 import sys #Module imported to access command-line arguments
 
 def counting_e(read_file): #Defining function name with file as parameter
@@ -15,7 +21,7 @@ def counting_e(read_file): #Defining function name with file as parameter
         
 def my_program (): #Defining main function
     if len(sys.argv) != 2: #If the number of arguments is not 2 (.py and .txt file)
-        print("No file provided") #User warning
+        print("Please provide a second argument (file) to run the program") #User warning
         sys.exit(1)
         
     read_file = sys.argv[1] #read the second argument and store in variable
@@ -26,8 +32,7 @@ def my_program (): #Defining main function
     my_counter = counting_e(read_file) #Calling counting_e function
     print(f"Number of E's in file '{read_file}' is:{my_counter}") #Print number of Es, return file name and counter
 
-if __name__ == '__main__': #Checking if script is not imported as a module
-    my_program() #call function
+my_program() #call function
 
 #Resources: 
 #https://sqlpey.com/python/top-4-methods-to-handle-exceptions-when-reading-files-in-python/#google_vignette
