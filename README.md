@@ -36,7 +36,7 @@ _https://www.toppr.com/guides/python-guide/examples/python-examples/python-progr
 
 **Weekly Task 5** - weekday.py  M
 In task 5, I've imported datetime library, the library which manipulates dates in Python and retrieved today's by calling function datetime.datetime.today().
-Each day of the week is an interger, 0 - 4 Monday to Thursday and 5 - 6 Saturday and Sunday. I've used an If/else statement to read the current date and print message to user.
+Each day of the week is an integer, 0 - 4 Monday to Thursday and 5 - 6 Saturday and Sunday. I've used an If/else statement to read the current date and print message to user.
 
 I took the idea for this exercise from Shecodes:
 _https://www.shecodes.io/athena/10185-how-to-check-what-day-of-the-week-it-is-in-python#:~:text=date%20using%20datetime.-,datetime.,)%20to%206%20(Sunday)_
@@ -48,7 +48,7 @@ I've created a function to calculate the squared root and store the result in a 
 1. Function calculates the root square aproximation multipliyng the user input by 0.5 nd store value in first_root
 2. Calculates square root using Newnton's method: square_root = 0.5 * (X + (N / X)) from W3Schools
 3. While loop runs program while both variable values first_root and square_root are different
-
+4. I've added two print statements (commented out) to check the results function results of each loop iteration
 
 
  Newton method formulas, approach and inspiration:
@@ -56,8 +56,41 @@ I've created a function to calculate the squared root and store the result in a 
 _https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756_
 
 **Weekly Task 7** - es.py
+This program is devided in two functions:
+
+1. my_program()
+The first block of this function checks if user is passing the two necessary arguments to run  the program a python script .py and text file .txt, if not, a message will be printed out to user and python will exit the program.
+The second if statement checks if the second argument passed is a text file,if not, a message will be printed out to user and python will exit the program.
+If no issues encountered, the function will call 'counting_e()' and store it's result in variable 'my_counter'
+
+2.counting_e()
+Divided by a try/except block
+Try block will open the file in read mode. Read the file and store it in variable file_content and close the file. My program wouldn't read the file at first, I've used ChatGPT to debug this file, I had to specify the encoding 'UTF-8' to line 'file = open(read_file,'r',encoding='utf-8')' 
+After that, python will convert the content from the file to lower case 'file_content.lower()' and count the letter e in 'count('e') and store the count in 'my_counter'
+
+Except block will display an error in case Python can't open or access the text file.
+
+Resources for this exercise and where I've applied:
+Handling exceptions, helped me estructure the try/except from my code and : https://sqlpey.com/python/top-4-methods-to-handle-exceptions-when-reading-files-in-python/#google_vignette
+How to check a file extension:https://dnmtechs.com/using-endswith-to-check-for-multiple-file-extensions-in-python-3/
+How to count characters, define and call functions: _https://ostechnix.com/count-characters-and-words-in-text-files-using-python/_
+I am currently reading this book, thought it would be fun to use it for the exercise _Fitzgerald, F. Scott. The Great Gatsby. Scribner, 2004_
 
 **Weekly Task 8** - plottask.py
+1.Plotting the histogram of a normal distribution
+First I generated a random array using numpy function 'random.normal', where I could define: loc=mean and scale = standard deviation. Array stored in variable my_plot_array. I generated the plot using 'plt.hist', added a title, labels for both axis and horizontal grid lines.
 
+2. Plotting of the function  h(x)=x3
+X axis: I've generated a random array using numpy function 'linspace', where I could define asked range of 0 to 10, I've added a random 201 values to the array.
+Y axis: Added to function $X^3$, I generated the plot using 'plt.plot', added a title, labels for both axis, horizontal grid lines and a legend. Also added LaTex function '$$' to display the function 'X^3' as a mathematical expression.
+
+Resources for this exercise and where I've applied:
+To add the horizontal grid lines to plot: _https://www.w3schools.com/python/matplotlib_grid.asp_ 
+Generate the array to plot histogram: _https://numpy.org/doc/2.1/reference/random/generated/numpy.random.normal.html
+Generate the array to plot function h(x)=x3:  _https://numpy.org/doc/stable/reference/generated/numpy.linspace.html_
+To add labels and title to plot: _https://www.w3schools.com/python/matplotlib_labels.asp_
+To add a legend to the plot: _https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html_
+To add the mathematical expressions using LaTex: _https://matplotlib.org/stable/users/explain/text/mathtext.html_
+Library to plot the histogram: _https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html_
 
 
